@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans");
+
+body {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1.5em;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+}
+
+.faq-card {
+  background: white;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 50px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 800px;
+}
+
+.faq-image-container {
+ 
+  text-align: center;
+}
+
+.faq-background-image-container,
+.faq-woman-image-container {
+  position: relative;
+
+}
+
+.faq-woman-image {
+  max-width: 266px;
+  max-height: 196px;
+  position: absolute;
+  top: 50%;
+  transform: translate(45%, -65%);
+  right: 0;
+  z-index: 1;
+}
+
+.faq-background-image {
+  max-width: 240px;
+  max-height: 104px;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -20%);
+  right: 0;
+  z-index: 0;
+}
+
+.faq-questions {
+  padding: 100px 20px 20px 20px;
+}
+
+.faq-header {
+  padding: 0.5em;
+}
+
+.faq-header .faq-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+}
+
+.faq-question-container {
+  padding: 1.5em 0;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.faq-question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question {
+  color: hsl(237, 12%, 33%);
+}
+
+.faq-question-icon {
+  content: url("./images/icon-arrow-down.svg");
+  height: 7px;
+  width: 10px;
+  color: hsl(14, 88%, 65%);
+  margin-left: 10px;
+}
+
+.faq-answer {
+  padding: 1em 0.2em;
+  font-weight: 400;
+  color: hsl(240, 6%, 50%);
+  display: none;
+}
+
+footer {
+  padding: 1em;
+  margin-top: 30px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .faq-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+  }
+  .faq-image-container {
+    width: 400px;
+    overflow: hidden;
+  }
+
+  .faq-questions {
+    padding-top: 20px;
+  }
+
+  .faq-woman-image {
+    top: 0;
+    transform: translate(40%, -20%);
+  }
+}
